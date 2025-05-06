@@ -2,6 +2,7 @@
   "name": "my-node-react-app",
   "version": "1.0.0",
   "private": true,
+  "proxy": "http://localhost:9001",
   "scripts": {
     "start": "PORT=9010 react-scripts start",
     "build": "react-scripts build",

@@ -59,4 +59,4 @@ Bug-Free-Sniffle
 - The server will be running on `http://localhost:9000` (or the port specified in your server configuration).
 - The React client will be running on `http://localhost:9010`.
 
-You can access the application in your web browser at the client URL. The client will communicate with the server to fetch and display data as needed.
+You can access the application in your web browser at the client URL. The client will communicate with the server to fetch and display data asMight vo needed.
