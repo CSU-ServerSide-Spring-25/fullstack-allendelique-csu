@@ -10,17 +10,17 @@ function App() {
     const checkClassActive = (tab) => {
         return `btn btn-${tab === activeTab ? 'primary' : 'dark'}`
     }
-    const handleSubmit = (zipCode) => {
-        let url = 'http://127.0.0.1:9000'
+    const handleSubmit = async (zipCode) => {
+        let url = 'http://127.0.0.1:9001'
         switch (activeTab) {
             case ('f'):
                 url += `/forecast?location=${zipCode}&days=3`;
                 break;
             case ('c'):
-                url += 'AddYourCurrentHere'
+                url += `/current?location=${zipCode}`
                 break;
             case ('a'):
-                url += 'addyouralertshere'
+                url += `/alerts?location=${zipCode}`
                 break;
             default:
                 break;
